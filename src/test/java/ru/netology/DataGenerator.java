@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Random;
 
+
 public class DataGenerator {
     private DataGenerator() {
     }
@@ -17,7 +18,7 @@ public class DataGenerator {
     }
 
     public static String generateCity() {
-        var cities = new String[] {
+        var cities = new String[]{
                 "Липецк", "Орел", "Рязань", "Смоленск", "Тамбов", "Тверь", "Тула", "Ярославль",
                 "Архангельск", "Вологда", "Калининград", "Петрозаводск", "Сыктывкар",
                 "Санкт-Петербург", "Мурманск", "Салехард", "Великий Новгород", "Псков", "Уфа",
@@ -39,7 +40,8 @@ public class DataGenerator {
     }
 
     public static class Registration {
-        private Registration() {}
+        private Registration() {
+        }
 
         public static UserInfo generateUser(String locale) {
             return new UserInfo(generateCity(), generateName(locale), generatePhone(locale));
