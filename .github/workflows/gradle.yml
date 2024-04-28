@@ -27,5 +27,5 @@ jobs:
         # Для проектов на базе Selenide необходимо добавить параметр для запуска браузера
         # в headless режиме -Dselenide.headless=true, параметр --info должен остаться
         run: |
-          export $JAVA_HOME="D:\Eclipse Adoptium\jdk-11.0.22.7-hotspot"
+          export JAVA_HOME="D:\Eclipse Adoptium\jdk-11.0.22.7-hotspot"
           ./gradlew test --info
